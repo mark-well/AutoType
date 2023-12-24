@@ -1,5 +1,5 @@
 
-#import pyautogui
+import pyautogui
 import time
 
 # Edit these variables to your desire
@@ -29,8 +29,8 @@ def CountDown(seconds):
 
 def StartTyping():
 	for i in range(numberOfMessages):
-		#pyautogui.write(message, typingSpeed)
-		#pyautogui.press("Enter")
+		pyautogui.write(message, typingSpeed)
+		pyautogui.press("Enter")
 	
 		print(f"Successfully typed \"{message}\" ({i+1}/{numberOfMessages})")
 		time.sleep(delayForEachMessage)
